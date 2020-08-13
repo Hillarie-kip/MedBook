@@ -184,19 +184,7 @@ pd=new SpotsDialog(context);
                                     Log.e("RES", String.valueOf(response));
                                     rQueue.getCache().clear();
                                     pd.dismiss();
-                                    try {
-                                        //Check if user got logged in successfully
-                                        if (!response.getBoolean("Error")) {
-                                            Toast.makeText(context, response.getString("Message"), Toast.LENGTH_SHORT).show();
 
-
-                                        } else {
-                                            Toast.makeText(context, response.getString("Message"), Toast.LENGTH_SHORT).show();
-
-                                        }
-                                    } catch (JSONException e) {
-                                        e.printStackTrace();
-                                    }
 
 
                                 }, new Response.ErrorListener() {
