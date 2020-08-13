@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/floatingActionMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:menu_colorNormal="@color/colorAccent"
+        app:menu_colorPressed="@color/colorAccent"
+        app:menu_labels_colorNormal="@color/colorAccent"
+        app:menu_labels_cornerRadius="50dp"
+        app:menu_labels_position="left"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_textColor="@color/white"
+        app:menu_labels_textSize="15sp"
+        fab:menu_animationDelayPerItem="0"
+        fab:menu_shadowColor="@color/colorAccent">
+
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_addpost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/colorAccent"
+            app:fab_colorPressed="@color/colorPrimaryDark"
+            app:fab_label="Add Post"
+            fab:fab_size="mini" />
+
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
